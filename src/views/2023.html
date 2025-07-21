@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sketchbook Digital - 2023</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="checkbox-cover">
+    <input type="checkbox" id="checkbox-page1">
+    <input type="checkbox" id="checkbox-page2">
+    <input type="checkbox" id="checkbox-page3">
+    <input type="checkbox" id="checkbox-page4">
+    <input type="checkbox" id="checkbox-page5"> 
+    
+    <div class="book book-2023">
+
+        <div class="cover">
+            <div class="cover-title">2023</div>
+            <label for="checkbox-cover"></label>
+        </div>
+        
+        <!-- Page 1: Front (2023_1.jpg) & Back (2023_2.jpg) -->
+        <div class="page" id="page1">
+            <label class="front-page-label front-page has-image" for="checkbox-page1">
+                <img src="../assets/2023/2023_1.jpg" alt="Sketchbook Image 1 - 2023">
+                <i class="fas fa-chevron-right next"></i>
+            </label>
+            <label class="back-page-label back-page has-image" for="checkbox-page1">
+                <img src="../assets/2023/2023_2.jpg" alt="Sketchbook Image 2 - 2023">
+                <i class="fas fa-chevron-left prev"></i>
+            </label>
+        </div>
+
+        <!-- Page 2: Front (2023_3.jpg) & Back (2023_4.jpg) -->
+        <div class="page" id="page2">
+            <label class="front-page-label front-page has-image" for="checkbox-page2">
+                <img src="../assets/2023/2023_3.jpg" alt="Sketchbook Image 3 - 2023">
+                <i class="fas fa-chevron-right next"></i>
+            </label>
+            <label class="back-page-label back-page has-image" for="checkbox-page2">
+                <img src="../assets/2023/2023_4.jpg" alt="Sketchbook Image 4 - 2023">
+                <i class="fas fa-chevron-left prev"></i>
+            </label>
+        </div>
+
+        <!-- Page 3: Front (2023_5.jpg) & Back (2023_6.jpg) -->
+        <div class="page" id="page3">
+            <label class="front-page-label front-page has-image" for="checkbox-page3">
+                <img src="../assets/2023/2023_5.jpg" alt="Sketchbook Image 5 - 2023">
+                <i class="fas fa-chevron-right next"></i>
+            </label>
+            <label class="back-page-label back-page has-image" for="checkbox-page3">
+                <img src="../assets/2023/2023_6.jpg" alt="Sketchbook Image 6 - 2023">
+                <i class="fas fa-chevron-left prev"></i>
+            </label>
+        </div>
+
+        <!-- Page 4: Front (2023_7.jpg) & Back (2023_8.jpg) -->
+        <div class="page" id="page4">
+            <label class="front-page-label front-page has-image" for="checkbox-page4">
+                <img src="../assets/2023/2023_7.jpg" alt="Sketchbook Image 7 - 2023">
+                <i class="fas fa-chevron-right next"></i>
+            </label>
+            <label class="back-page-label back-page has-image" for="checkbox-page4">
+                <img src="../assets/2023/2023_8.jpg" alt="Sketchbook Image 8 - 2023">
+                <i class="fas fa-chevron-left prev"></i>
+            </label>
+        </div>
+
+        <!-- Page 5: Front (2023_9.jpg)  -->
+        <div class="page" id="page5">
+            <label class="front-page-label front-page has-image" for="checkbox-page5">
+                <img src="../assets/2023/2023_9.jpg" alt="Sketchbook Image 9 - 2023">
+                <i class="fas fa-chevron-right next"></i>
+            </label>
+        </div>
+
+    </div>
+</body>
+</html>

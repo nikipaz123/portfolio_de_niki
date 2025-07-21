@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"> 
+        
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Mi Sketchbook Digital - 2020</title> 
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        
+        <div class="book book-2020">
+
+            <div class="cover">
+                <div class="cover-title">2020</div>
+                <label for="checkbox-cover"></label>
+            </div>
+              
+            <div class="page" id="page1">
+                <label class="front-page-label front-page" for="checkbox-page1">
+                    <h2>Página 1</h2>
+                    <p>El año de la introspección y el arte digital. Muchos experimentos con Procreate y Photoshop.</p>
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+                
+                <label class="back-page-label back-page" for="checkbox-page1">
+                    <img src="../assets/1.jpg" alt="Sketchbook Image 1 - 2020">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page2">
+                <label class="front-page-label front-page" for="checkbox-page2">
+                    <h2>Página 2</h2>
+                    <p>Ilustraciones para cuentos y conceptos de mundos fantásticos. Un enfoque en la narrativa visual.</p>
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+
+                <label class="back-page-label back-page" for="checkbox-page2">
+                    <img src="../assets/2.jpg" alt="Sketchbook Image 2 - 2020">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <h2>Página 3</h2>
+                    <p>Diseños de tatuajes y arte para redes sociales. Adaptando mi estilo a diferentes formatos.</p>
+                </div>
+                <label class="back-page-label back-page" for="checkbox-page3">
+                    <h2>Contraportada</h2>
+                    <p>Un año de desafíos, pero también de mucha creatividad. ¡Hasta 2021!</p>
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="back-cover"></div>
+        </div>
+    </body>
+</html>

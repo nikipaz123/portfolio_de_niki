@@ -1,0 +1,110 @@
+/* styles/trinkets.css */
+
+/* Container for content and trinkets within the about-me-section */
+.about-me-collage-container {
+    position: relative; /* Establishes a positioning context for trinkets */
+    padding: 4rem 2rem; /* Padding for the content area */
+    width: 100%; /* Take full width */
+    height: 100%; /* Take full height of its parent */
+    min-height: 400px; /* Ensure enough space for content and trinkets */
+    box-sizing: border-box;
+}
+
+/* Base styles for all trinket images */
+.trinket {
+    position: absolute; /* Allows precise positioning within .about-me-collage-container */
+    z-index: 1; /* Puts trinkets behind the text content by default */
+    object-fit: contain; /* Ensures images fit without cropping */
+    /* REMOVED: pointer-events: none; from here */
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3)); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, filter 0.3s ease; /* ADDED: Transition for smooth hover effect */
+    cursor: pointer; /* ADDED: Indicate it's interactive */
+}
+
+.trinket:hover {
+    transform: scale(1.1); /* Make the trinket 10% larger on hover */
+    filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.4)); /* Slightly more pronounced shadow on hover */
+    /* pointer-events: auto; is still here but less critical now that base is not 'none' */
+    z-index: 3; /* Bring to front on hover if it overlaps other trinkets */
+}
+
+.about-me-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Specific positioning and styling for each trinket */
+.trinket-pin {
+    width: 80px; /* Size of the pin */
+    top: 10%;
+    left: 10%;
+    transform: rotate(15deg); /* Slight rotation */
+}
+
+.trinket-polaroid {
+    width: 30%; /* Size of the polaroid */
+    top: 40%;
+    right: 1%;
+    transform: rotate(-8deg);
+}
+
+.trinket-paint { 
+    width: 200px; /* Size of the paint */
+    top: 10%;
+    right: 10%;
+    transform: rotate(30deg);
+}
+
+.trinket-note {
+    bottom: 10%; /* Adjusted position */
+    left: 2%;
+    transform: rotate(-2deg);
+}
+
+/* Media Queries for Responsiveness (Important for mobile!) */
+@media (max-width: 768px) {
+    .about-me-collage-container {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+        min-height: 350px; /* Adjust min-height for smaller screens */
+    }
+
+    .trinket {
+        width: 15vw; /* Use viewport width for responsive sizing */
+    }
+
+    .trinket-pin {
+        width: 10vw;
+        top: 5%;
+        left: 5%;
+    }
+
+    .trinket-polaroid {
+        width: 25vw;
+        top: 60%;
+        right: 5%;
+    }
+
+    .trinket-paint { /* Assuming this is the brush, or a new image */
+        width: 15vw;
+        bottom: 5%;
+        left: 10%;
+    }
+
+    .trinket-note {
+        width: 20vw;
+        top: 15%;
+        right: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .about-me-collage-container {
+        padding: 1.5rem 0.8rem;
+    }
+    .trinket {
+        width: 12vw; /* Even smaller trinkets */
+    }
+}
