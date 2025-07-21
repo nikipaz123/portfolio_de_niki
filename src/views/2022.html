@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"> 
+        
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Mi Sketchbook Digital - 2022</title> 
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        
+        <div class="book book-2022">
+
+            <div class="cover">
+                <div class="cover-title">2022</div>
+                <label for="checkbox-cover"></label>
+            </div>
+              
+            <div class="page" id="page1">
+                <label class="front-page-label front-page" for="checkbox-page1">
+                    <h2>Página 1</h2>
+                    <p>Enfoque en la ilustración infantil. Personajes tiernos y escenarios coloridos.</p>
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+                
+                <label class="back-page-label back-page" for="checkbox-page1">
+                    <img src="../assets/1.jpg" alt="Sketchbook Image 1 - 2022">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page2">
+                <label class="front-page-label front-page" for="checkbox-page2">
+                    <h2>Página 2</h2>
+                    <p>Desarrollo de portadas de libros y conceptos visuales para editoriales.</p>
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+
+                <label class="back-page-label back-page" for="checkbox-page2">
+                    <img src="../assets/2.jpg" alt="Sketchbook Image 2 - 2022">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <h2>Página 3</h2>
+                    <p>Talleres de dibujo y pintura. Compartiendo mi pasión con otros artistas.</p>
+                </div>
+                <label class="back-page-label back-page" for="checkbox-page3">
+                    <h2>Contraportada</h2>
+                    <p>Un año lleno de aprendizaje y nuevas conexiones. ¡Gracias por tu visita!</p>
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="back-cover"></div>
+        </div>
+    </body>
+</html>

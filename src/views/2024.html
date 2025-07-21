@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es"> 
+        
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Mi Sketchbook Digital - 2024</title> 
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        
+        <div class="book book-2024">
+
+            <div class="cover">
+                <div class="cover-title">2024</div>
+                <label for="checkbox-cover"></label>
+            </div>
+              
+            <div class="page" id="page1">
+                <label class="front-page-label front-page" for="checkbox-page1">
+                    <h2>Página 1</h2>
+                    <p>Explorando el arte generativo y la integración de IA en mis procesos creativos.</p>
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+                
+                <label class="back-page-label back-page" for="checkbox-page1">
+                    <img src="../assets/1.jpg" alt="Sketchbook Image 1 - 2024">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page2">
+                <label class="front-page-label front-page" for="checkbox-page2">
+                    <h2>Página 2</h2>
+                    <p>Diseño de experiencias interactivas y arte digital inmersivo.</p>
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+
+                <label class="back-page-label back-page" for="checkbox-page2">
+                    <img src="../assets/2.jpg" alt="Sketchbook Image 2 - 2024">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <h2>Página 3</h2>
+                    <p>Proyectos de realidad aumentada y arte para el metaverso.</p>
+                </div>
+                <label class="back-page-label back-page" for="checkbox-page3">
+                    <h2>Contraportada</h2>
+                    <p>Un año de innovación y futuro. ¡Gracias por ser parte de esta evolución!</p>
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="back-cover"></div>
+        </div>
+    </body>
+</html>

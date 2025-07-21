@@ -1,0 +1,91 @@
+/* Carrusel Infinito Centrado */
+.carousel-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+}
+
+.carousel-item {
+  width: 150px;
+  height: 200px;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  flex-shrink: 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  position: relative;
+  pointer-events: all;
+}
+
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.carousel-item.active {
+  transform: scale(1.15);
+  z-index: 2;
+}
+
+.carousel-item.active::after {
+  border-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 30px rgba(255,255,255,0.4);
+}
+
+.year-label {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: white;
+  font-family: var(--fuente);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.carousel-item {
+  flex: 0 0 150px;
+  height: 200px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item.active {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.carousel-item.book-2018 {
+  background-image: url('../assets/bg2018.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
