@@ -11,57 +11,84 @@
     </head>
   
     <body>
+        <!-- Hidden checkboxes to control page flips -->
         <input type="checkbox" id="checkbox-cover">
         <input type="checkbox" id="checkbox-page1">
         <input type="checkbox" id="checkbox-page2">
         <input type="checkbox" id="checkbox-page3">
+        <input type="checkbox" id="checkbox-page4">
+        <input type="checkbox" id="checkbox-page5"> 
         
         <div class="book book-2025">
 
             <div class="cover">
                 <div class="cover-title">2025</div>
+                <!-- Label for the cover, clicking anywhere on the cover flips it -->
                 <label for="checkbox-cover"></label>
             </div>
               
+            <!-- Page 1: Front (2025_1.jpg) & Back (2025_2.jpg) -->
             <div class="page" id="page1">
-                <label class="front-page-label front-page" for="checkbox-page1">
-                    <h2>Página 1</h2>
-                    <p>Consolidación de mi estilo personal. Proyectos de gran escala y reconocimiento.</p>
+                <label class="front-page-label front-page has-image" for="checkbox-page1">
+                    <img src="../assets/2025/2025_1.jpg" alt="Sketchbook Image 1 - 2025">
                     <i class="fas fa-chevron-right next"></i>
                 </label>
-                
-                <label class="back-page-label back-page" for="checkbox-page1">
-                    <img src="../assets/1.jpg" alt="Sketchbook Image 1 - 2025">
+                <label class="back-page-label back-page has-image" for="checkbox-page1">
+                    <img src="../assets/2025/2025_2.jpg" alt="Sketchbook Image 2 - 2025">
                     <i class="fas fa-chevron-left prev"></i>
                 </label>
             </div>
 
+            <!-- Page 2: Front (2025_3.jpg) & Back (2025_4.jpg) -->
             <div class="page" id="page2">
-                <label class="front-page-label front-page" for="checkbox-page2">
-                    <h2>Página 2</h2>
-                    <p>Exposiciones internacionales y colaboraciones con marcas de renombre.</p>
+                <label class="front-page-label front-page has-image" for="checkbox-page2">
+                    <img src="../assets/2025/2025_3.jpg" alt="Sketchbook Image 3 - 2025">
                     <i class="fas fa-chevron-right next"></i>
                 </label>
-
-                <label class="back-page-label back-page" for="checkbox-page2">
-                    <img src="../assets/2.jpg" alt="Sketchbook Image 2 - 2025">
+                <label class="back-page-label back-page has-image" for="checkbox-page2">
+                    <img src="../assets/2025/2025_4.jpg" alt="Sketchbook Image 4 - 2025">
                     <i class="fas fa-chevron-left prev"></i>
                 </label>
             </div>
 
+            <!-- Page 3: Front (2025_5.jpg) & Back (2025_6.jpg) -->
             <div class="page" id="page3">
-                <div class="front-page">
-                    <h2>Página 3</h2>
-                    <p>Mentoring a jóvenes artistas y desarrollo de mi propia academia de arte.</p>
-                </div>
-                <label class="back-page-label back-page" for="checkbox-page3">
-                    <h2>Contraportada</h2>
-                    <p>Un año de logros y sueños cumplidos. ¡Gracias por ser parte de mi historia!</p>
+                <label class="front-page-label front-page has-image" for="checkbox-page3">
+                    <img src="../assets/2025/2025_5.jpg" alt="Sketchbook Image 5 - 2025">
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+                <label class="back-page-label back-page has-image" for="checkbox-page3">
+                    <img src="../assets/2025/2025_6.jpg" alt="Sketchbook Image 6 - 2025">
                     <i class="fas fa-chevron-left prev"></i>
                 </label>
             </div>
 
-            <div class="back-cover"></div>
+            <!-- Page 4: Front (2025_7.jpg) & Back (2025_8.jpg) -->
+            <div class="page" id="page4">
+                <label class="front-page-label front-page has-image" for="checkbox-page4">
+                    <img src="../assets/2025/2025_7.jpg" alt="Sketchbook Image 7 - 2025">
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+                <label class="back-page-label back-page has-image" for="checkbox-page4">
+                    <img src="../assets/2025/2025_8.jpg" alt="Sketchbook Image 8 - 2025">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <!-- Page 5: Front (2025_9.jpg) & Back (Empty) -->
+            <div class="page" id="page5">
+                <label class="front-page-label front-page has-image" for="checkbox-page5">
+                    <img src="../assets/2025/2025_9.jpg" alt="Sketchbook Image 9 - 2025">
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+                <!-- The back of page 5 will be empty, showing the default white background -->
+                <label class="back-page-label back-page" for="checkbox-page5">
+                    <!-- No content here, it will be a blank page -->
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="back-cover"></div> 
         </div>
     </body>
 </html>
