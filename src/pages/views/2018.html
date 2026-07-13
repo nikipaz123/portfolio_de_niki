@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es"> 
+        
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Mi Sketchbook Digital - 2018</title> 
+        <link rel="stylesheet" href="../styles/style.css">
+        <!-- Make sure Font Awesome is linked if you're using icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+  
+    <body>
+        <!-- Hidden checkboxes to control page flips -->
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        
+        <div class="book book-2018">
+
+            <div class="cover">
+                <div class="cover-title">2018</div>
+                <!-- Label for the cover, clicking anywhere on the cover flips it -->
+                <label for="checkbox-cover"></label>
+            </div>
+              
+            <div class="page" id="page1">
+                <!-- Front page of Page 1 -->
+                <!-- CORRECTED: The <label> now directly has the 'front-page' class -->
+                <label class="front-page-label front-page" for="checkbox-page1">
+                    <h2>Página 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae quia. Recusandae, fuga quas consectetur perferendis aperiam esse velit veniam ducimus? Quisquam consequatur perferendis quidem quia, recusandae ab!</p>
+                    <!-- Optional: Keep the arrow for visual cue, but the whole page is clickable -->
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+                
+                <!-- Back page of Page 1 -->
+                <!-- CORRECTED: The <label> now directly has the 'back-page' class -->
+                <label class="back-page-label back-page" for="checkbox-page1">
+                    <img src="../assets/1.jpg" alt="Sketchbook Image 1">
+                    <!-- Optional: Keep the arrow for visual cue, but the whole page is clickable -->
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page2">
+                <!-- Front page of Page 2 -->
+                <label class="front-page-label front-page" for="checkbox-page2">
+                    <h2>Página 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae quia. Recusandae, fuga quas consectetur perferendis aperiam esse velit veniam ducimus? Quisquam consequatur perferendis quidem quia, recusandae ab!</p>
+                    <i class="fas fa-chevron-right next"></i>
+                </label>
+
+                <!-- Back page of Page 2 -->
+                <label class="back-page-label back-page" for="checkbox-page2">
+                    <img src="../assets/2.jpg" alt="Sketchbook Image 2">
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="page" id="page3">
+                <!-- Front page of Page 3 (last page, so no 'next' action) -->
+                <!-- CORRECTED: This is the last page's front, so it's just a div, not a label for flipping forward -->
+                <div class="front-page">
+                    <h2>Página 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae quia. Recusandae, fuga quas consectetur perferendis aperiam esse velit veniam ducimus? Quisquam consequatur perferendis quidem quia, recusandae ab!</p>
+                    <!-- No 'next' arrow/label needed for the last page's front -->
+                </div>
+                <!-- Back page of Page 3 (clicking this should flip back to front of page 3) -->
+                <label class="back-page-label back-page" for="checkbox-page3">
+                    <h2>Contraportada</h2>
+                    <p>Este es el final del sketchbook de 2018. ¡Gracias por mirar!</p>
+                    <i class="fas fa-chevron-left prev"></i>
+                </label>
+            </div>
+
+            <div class="back-cover"></div>
+        </div>
+    </body>
+</html>
